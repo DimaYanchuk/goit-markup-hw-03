@@ -1,0 +1,255 @@
+/*  */
+/* Цветовая палитра */
+/* Основной фон #fff */
+/* Вторичный фон #2F303A */
+/* Третичный фон #f5f4fa */
+/* Основной белый, фон шапки #fff */
+/* Основной черный */
+/* Основной текст #757575 */
+/* Текст заголовков #212121 */
+/* Текст ссылок футера rgba(255, 255, 255, 0.6) */
+/* Акцент #2196F3 */
+
+/* Общие стили */
+
+:root {
+  --primary-background-color: #fff;
+  --secondary-background-color: #2f303a;
+  --tetriary-background-color: #f5f4fa;
+  --primary-white-color: #fff;
+  --primary-black-color: #000;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --footer-linc-color: rgba(255, 255, 255, 0.6);
+  --accent-text-color: #2196f3;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.section-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+/* Шапка */
+
+.header {
+  background-color: var(--primary-white-color);
+}
+
+.logo {
+  color: var(--accent-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+
+.logo .black {
+  color: var(--primary-black-color);
+}
+
+.logo .white {
+  color: var(--primary-white-color);
+}
+
+/* Наигация */
+
+.nav-list .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.nav-list .link.current {
+  color: var(--accent-text-color);
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Контакты */
+
+.cont-list .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.cont-list .link:hover,
+.cont-list .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Подвал */
+
+.footer {
+  background-color: var(--secondary-background-color);
+}
+
+/* Адрес */
+
+.adr-list .link {
+  color: var(--footer-linc-color);
+
+  font-style: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  text-decoration: none;
+}
+
+.adr-list .link-geo {
+  color: var(--primary-white-color);
+
+  text-shadow: none;
+
+  text-decoration: none;
+}
+
+.adr-list .link:hover,
+.adr-list .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Главная страница */
+
+/* Герой */
+
+.hero {
+  background-color: var(--secondary-background-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  background-color: var(--accent-text-color);
+  color: var(--primary-white-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* Особенности */
+
+.feat-list .title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+}
+
+/* Виды деятельности */
+
+/* Команда */
+
+.team {
+  background-color: var(--tetriary-background-color);
+}
+
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+}
+
+.team-descr {
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+}
+
+/* Портфолио */
+
+/* Фильтр категорий проектов */
+
+.filter-btn {
+  background-color: var(--tetriary-background-color);
+  color: var(--title-text-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-text-color);
+  color: var(--primary-white-color);
+}
+
+/* Примеры проектов */
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-descr {
+  font-size: 16px;
+  line-height: 1.9px;
+}
