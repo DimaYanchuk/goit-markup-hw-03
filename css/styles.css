@@ -1,5 +1,3 @@
-/*  */
-/* Цветовая палитра */
 /* Вторичный фон #2F303A */
 /* Третичный фон #f5f4fa */
 /* Основной белый, фон шапки #fff */
@@ -22,6 +20,7 @@
   --footer-linc-color: rgba(255, 255, 255, 0.6);
   --accent-text-color: #2196f3;
   --header-border-color: #ececec;
+  --hero-bacground-color: #c4c4c4;
 }
 
 body {
@@ -264,8 +263,20 @@ ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: var(--hero-bacground-color);
+}
 
-  background-color: var(--secondary-background-color);
+.overlay {
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: var(--hero-bacground-color); */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-overlay.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero .hero-title {
@@ -284,7 +295,6 @@ ul {
 }
 
 .hero-btn {
-  display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
 
@@ -295,11 +305,10 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  text-align: center;
   letter-spacing: 0.06em;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid transparent;
+  border: none;
   border-radius: 4px;
 
   cursor: pointer;
@@ -319,6 +328,45 @@ ul {
 .feat-list .item {
   width: 270px;
   margin-right: 30px;
+}
+
+.feat-list > .item::before {
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  content: '';
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+/* .feat-list .icon-antenna::before {
+  background-image: url(../images/icons/antenna.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.feat-list > .item:nth-child(1):before {
+  background-image: url(../images/icons/antenna.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feat-list > .item:nth-child(2):before {
+  background-image: url(../images/icons/clock.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feat-list > .item:nth-child(3):before {
+  background-image: url(../images/icons/diagram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feat-list > .item:nth-child(4):before {
+  background-image: url(../images/icons/astronaut.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .feat-list .item:last-child {
@@ -417,10 +465,9 @@ ul {
 }
 
 .filter-btn {
-  display: inline-block;
   padding: 6px 22px;
   text-align: center;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 4px;
 
   background-color: var(--tetriary-background-color);
@@ -429,8 +476,7 @@ ul {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
+  line-height: 1.56;
   letter-spacing: 0.03em;
 
   cursor: pointer;
